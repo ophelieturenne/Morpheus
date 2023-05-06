@@ -33,6 +33,10 @@ gem "devise"
 #passenger
 gem "passenger"
 
+# Customize gems
+gem 'openai', '~> 0.3.0'
+gem 'httparty'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
