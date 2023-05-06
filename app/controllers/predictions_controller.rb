@@ -1,4 +1,6 @@
 class PredictionsController < ApplicationController
+  before_action :authenticate_user!, only: [:create]
+  
   def index
     @predictions = current_user.predictions
   end
