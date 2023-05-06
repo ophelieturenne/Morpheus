@@ -30,6 +30,9 @@ gem "jbuilder"
 #devise
 gem "devise"
 
+#passenger
+gem "passenger"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
