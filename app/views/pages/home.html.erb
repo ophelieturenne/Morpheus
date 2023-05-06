@@ -1,2 +1,5 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= form_with url: predictions_path, method: 'post', local: true do |f| %>
+  <%= f.label :message, 'Message:' %>
+  <%= f.text_field :message %>
+  <%= f.submit 'Get Prediction' %>
+<% end %>
