@@ -37,6 +37,7 @@ gem "passenger"
 gem 'openai', '~> 0.3.0'
 gem 'httparty'
 gem 'dotenv-rails'
+gem "recaptcha", require: "recaptcha/rails"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
