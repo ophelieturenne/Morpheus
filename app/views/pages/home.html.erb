@@ -1,5 +1,13 @@
-<%= form_with url: predictions_path, method: 'post', local: true do |f| %>
-  <%= f.label :message, 'Message:' %>
-  <%= f.text_field :message %>
-  <%= f.submit 'Get Prediction' %>
-<% end %>
+
+<div class="row_flex">
+  <div>
+
+    <img src="" alt="">
+  </div>
+
+  <%= form_with url: predictions_path, method: 'post', local: true do |f| %>
+    <%= f.label :message, 'Message:' %>
+    <%= f.text_field :message %>
+    <%= f.submit 'Get Prediction' %>
+  <% end %>
+</div>
