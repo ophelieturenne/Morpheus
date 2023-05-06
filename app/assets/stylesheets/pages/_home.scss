@@ -1,1 +1,7 @@
 // Specific CSS for your home-page
+body {
+  background: linear-gradient($dark-blue, $dark-purple);
+  background-repeat:  no-repeat;
+  background-size: cover;
+  height: 100%;
+}
