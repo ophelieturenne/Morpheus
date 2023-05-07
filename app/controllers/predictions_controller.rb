@@ -39,5 +39,4 @@ class PredictionsController < ApplicationController
   def prediction_params
     params.permit(:message)
   end
-  
 end
