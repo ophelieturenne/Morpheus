@@ -1,0 +1,36 @@
+.prediction-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba($dark-purple, 0.15);
+
+  .card-header {
+    background-color: $dark-purple;
+    color: $white;
+
+    .card-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+
+  .prediction-card-body {
+    .card-title {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: $dark-purple;
+    }
+
+    .card-text {
+      color: lighten($dark-purple, 20%);
+      font-style: italic;
+    }
+
+  }
+
+  .card-footer {
+    background-color: lighten($dark-purple, 45%);
+    color: $dark-purple;
+    border: none;
+  }
+}
