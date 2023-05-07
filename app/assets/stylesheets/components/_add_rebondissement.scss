@@ -1,13 +1,14 @@
 // Homepage card - Rebondissement
 .card-product {
   max-width: 600px;
-  margin: 26px auto 20px;
+  margin: 13px auto 20px;
   overflow: hidden;
   height: 70px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  border-radius: 3px;
 }
 
 .card-product img {

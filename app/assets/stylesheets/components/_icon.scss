@@ -1,0 +1,13 @@
+.predic-show-icon {
+  background-color: $purple;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: $white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $dark-purple;
+    box-shadow: 0 0 0 0.2rem $dark-purple;
+    color: $white;
+  }
+}

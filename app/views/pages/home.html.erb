@@ -1,45 +1,37 @@
-<div class="hp_containter">
-  <h1 class="h1mt">Le futur est dans vos rêves.</h1>
-  <h1>Nous vous aiderons à le voir.</h1>
-
-
-  <div class="card-product mb-5">
-    <%= image_tag "hp_woman.jpg", class: "img_rebon" %>
-    <div class="card-product-infos">
-      <h2>Cliquez ici</h2>
-      <p>En cas de cauchemars fréquents, consultez un <strong>spécialiste</strong> en santé mentale.</p>
-    </div>
-  </div>
-
-  <div class="container-fluid" style="margin-bottom: 100px;">
-    <div class="container-global home">
-      <div class="row" id="description">
-        <div class="col-8">
-          <section>
-            <h2>Tes rêves sont la clef de ton futur</h2>
-            <p>Notre intelligence artificielle <strong>Onirix,</strong> te permettra d'analyser<br/> et de déchiffrer tes rêves pour que tu puisses prévoir ton futur.</p>
-            <%= image_tag "home.png", class: "home_img" %>
-          </section>
-        </div>
-        <div class="col-4" id="predictions">
-          <section>
-            <%= form_with url: predictions_path, method: 'post', local: true, html: { class: 'prediction-form' } do |f| %>
-              <%= f.label :message, 'Parlez-nous de votre rêve' , class: "forms-label" %> <br/>
-              <%= f.text_field :message, placeholder: 'Votre future en un clique...' , class: "forms-msg" %>
-              <% if @prediction&.errors&.key?(:dream) %>
-                <small class="form-text text-danger">
-                  <p>"Tu dois fournir un rêve pour obtenir une prédiction.</p>
-                </small>
-              <% end %>
-              <div class="form-group">
-                <%= f.submit 'Ma prédiction' , class: "forms-prediction buttons" %>
-              </div>
-              <div class="form-group">
-                <%= recaptcha_tags %>
-              </div>
+<div class="container h-100">
+  <div class="container-global home">
+    <div class="row" id="description">
+      <div class="col-8">
+        <section>
+          <h2>Tes rêves sont la clef de ton futur</h2>
+          <p>Notre intelligence artificielle <strong>Onirix,</strong> te permettra d'analyser<br/> et de déchiffrer tes rêves pour que tu puisses prévoir ton futur.</p>
+        </section>
+      </div>
+      <div class="col-4" id="predictions">
+        <section>
+          <div class="card-product mb-5">
+            <%= image_tag "hp_woman.jpg", class: "img_rebon" %>
+            <div class="card-product-infos">
+              <h2>Cliquez ici</h2>
+              <p>En cas de cauchemars fréquents, consultez un <strong>spécialiste</strong> en santé mentale.</p>
+            </div>
+          </div>
+          <%= form_with url: predictions_path, method: 'post', local: true, html: { class: 'prediction-form' } do |f| %>
+            <%= f.label :message, 'Parlez-nous de votre rêve' , class: "forms-label" %> <br/>
+            <%= f.text_field :message, placeholder: 'Votre future en un clique...' , class: "forms-msg" %>
+            <% if @prediction&.errors&.key?(:dream) %>
+              <small class="form-text text-danger">
+                <p>"Tu dois fournir un rêve pour obtenir une prédiction.</p>
+              </small>
             <% end %>
-          </section>
-        </div>
+            <div class="form-group">
+              <%= f.submit 'Ma prédiction' , class: "forms-prediction buttons" %>
+            </div>
+            <div class="form-group center">
+              <%= recaptcha_tags %>
+            </div>
+          <% end %>
+        </section>
       </div>
     </div>
   </div>

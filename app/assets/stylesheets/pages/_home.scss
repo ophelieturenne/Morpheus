@@ -3,7 +3,9 @@ body {
   // background: linear-gradient($dark-blue, $dark-purple);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+display: flex;
+    flex-direction: column;
   background-color: $black;
   color: $purple;
 
@@ -26,7 +28,8 @@ body {
     margin: 10px auto;
     padding: 20px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 3px;
+    text-align: center;
 
     .text_field {
       height: 50px;
@@ -53,6 +56,20 @@ html {
 
 #description {
   position: relative;
+  .col-8 {
+    section {
+      margin-top: 108px;
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+  }
 }
 
 .home_img {

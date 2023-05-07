@@ -4,16 +4,17 @@
   border-color: $purple;
   color: $purple;
   border: 1px solid;
-  padding: 10px 100px;
+
 
   &:hover {
-    background-color: $light-gray;
-    border-color: none;
-    color: $black;
+    background-color: $black;
+    border-color: $purple;
+    color: $purple;
     transition: ease-in-out(4s);
   }
 
   &.forms-prediction{
     text-align: center;
+    padding: 10px 133px;
   }
 }

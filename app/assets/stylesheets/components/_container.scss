@@ -2,7 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 70px auto;
+  margin: auto;
+}
+
+.container-pred {
+  margin: auto;
 }
 
 .container-fluid {
@@ -28,6 +32,11 @@
     width: 100%;
     height: 165px;
     border-radius: 3px;
+    text-align: center;
+
+    &:hover {
+      border-color: $purple;
+    }
   }
 
   .forms-prediction {
