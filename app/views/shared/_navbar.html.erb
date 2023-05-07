@@ -1,8 +1,16 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "logo.jpg" %>
-    <% end %>
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <%= link_to root_path, class: "navbar-brand" do %>
+          <%= image_tag "logo.jpg" %>
+        <% end %>
+      </li>
+      <li class="nav-item">
+      <h1 id="logg">Morpheus</h1>
+      </li>
+    </ul>
+
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

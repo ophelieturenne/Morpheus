@@ -1,0 +1,19 @@
+.buttons {
+  margin: 0 auto;
+  background: transparent;
+  border-color: $purple;
+  color: $purple;
+  border: 1px solid;
+  padding: 10px 100px;
+
+  &:hover {
+    background-color: $light-gray;
+    border-color: none;
+    color: $black;
+    transition: ease-in-out(4s);
+  }
+
+  &.forms-prediction{
+    text-align: center;
+  }
+}

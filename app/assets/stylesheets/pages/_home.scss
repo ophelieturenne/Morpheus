@@ -1,11 +1,31 @@
 // Specific CSS for your home-page
 body {
-  background: linear-gradient($dark-blue, $dark-purple);
+  // background: linear-gradient($dark-blue, $dark-purple);
   background-repeat:  no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
+  background-color: $black;
+  color: $purple;
 
     .row_flex {
       display: flex;
     }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#description {
+  position: relative;
+}
+
+.home_img {
+  position: absolute;
+  top: 100px;
+  left: 200px;
 }
