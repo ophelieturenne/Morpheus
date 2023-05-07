@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-display: flex;
+  display: flex;
     flex-direction: column;
   background-color: $black;
   color: $purple;
@@ -26,10 +26,18 @@ display: flex;
   .prediction-form {
     width: 100%;
     margin: 10px auto;
-    padding: 20px;
+    padding: 22px;
     background-color: white;
     border-radius: 3px;
     text-align: center;
+
+    @media only screen and (max-width : 1025px)  {
+      width: 118%;
+    }
+
+    @media only screen and (max-width : 768px)  {
+      width: 153%;
+    }
 
     .text_field {
       height: 50px;
@@ -60,12 +68,22 @@ html {
     section {
       margin-top: 108px;
 
+      @media only screen and (max-width : 768px) {
+        margin-top: 125px;
+      }
+
       h2 {
         font-size: 3rem;
+        @media only screen and (max-width : 768px) {
+          font-size: 2rem;
+        }
       }
 
       p {
         font-size: 1.5rem;
+        @media only screen and (max-width : 768px) {
+          font-size: 1.2rem;
+        }
       }
     }
 

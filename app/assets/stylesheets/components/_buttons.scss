@@ -15,6 +15,10 @@
 
   &.forms-prediction{
     text-align: center;
-    padding: 10px 133px;
+    padding: 10px 132px;
+
+    @media (min-width: 768px) and (max-width: 1024px)  {
+      padding: 10px 99px;
+    }
   }
 }
