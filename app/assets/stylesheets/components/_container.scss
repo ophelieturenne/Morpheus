@@ -4,21 +4,23 @@
   align-items: center;
   margin: 70px auto;
 }
+
 .container-fluid {
   width: 83.4%;
 }
 
-.container-global{
-  width: 1250px;
+.container-global {
+  width: 100%;
 }
 
 #predictions {
+
   .forms-label,
-  .forms-msg
-  {
+  .forms-msg {
     margin-bottom: 22px;
   }
-  .forms-label{
+
+  .forms-label {
     font-size: 20px;
   }
 
@@ -28,13 +30,13 @@
     border-radius: 3px;
   }
 
-  .forms-prediction{
+  .forms-prediction {
     margin-bottom: 22px;
     border-radius: 3px;
   }
 }
 
-#title{
+#title {
   margin-bottom: 60px;
   font-size: 2.5rem;
 }
