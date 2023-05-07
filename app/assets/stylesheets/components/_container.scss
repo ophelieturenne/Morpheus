@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto;
+}
+.container-fluid {
+  width: 83.4%;
+}
+
+.container-global{
+  width: 1250px;
+}
+
+#predictions {
+  .forms-label,
+  .forms-msg
+  {
+    margin-bottom: 22px;
+  }
+  .forms-label{
+    font-size: 20px;
+  }
+
+  .forms-msg {
+    width: 100%;
+    height: 165px;
+    border-radius: 3px;
+  }
+
+  .forms-prediction{
+    margin-bottom: 22px;
+    border-radius: 3px;
+  }
+}
+
+#title{
+  margin-bottom: 60px;
+  font-size: 2.5rem;
+}

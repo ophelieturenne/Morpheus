@@ -1,12 +1,23 @@
-<div class="row_flex">
-  <div>
-    <img src="" alt="">
+<div class="container">
+  <div class="container-global home">
+    <div class="row" id="description">
+      <div class="col-8">
+        <section>
+        <h2>Tes rêves sont la clef de ton futur</h2>
+        <p>Notre intelligence artificielle <strong>Onirix,</strong> te permettra d'analyser<br/> et de déchiffrer tes rêves pour que tu puisses prévoir ton futur.</p>
+        <%= image_tag "home.png", class: "home_img" %>
+        </section>
+      </div>
+      <div class="col-4" id="predictions">
+        <section>
+          <%= form_with url: predictions_path, method: 'post', local: true do |f| %>
+            <%= f.label :message, 'Parlez-nous de ton rêve' , class: "forms-label" %> <br/>
+            <%= f.text_field :message , class: "forms-msg" %>
+            <%= f.submit 'Ma prédiction' , class: "forms-prediction buttons" %>
+            <%= recaptcha_tags %> <!-- Ligne ajoutée depuis la version 'master' -->
+          <% end %>
+        </section>
+      </div>
+    </div>
   </div>
-
-  <%= form_with url: predictions_path, method: 'post', local: true do |f| %>
-    <%= f.label :message, 'Message:' %>
-    <%= f.text_field :message %>
-    <%= recaptcha_tags %> <!-- Ligne ajoutée depuis la version 'master' -->
-    <%= f.submit 'Get Prediction' %>
-  <% end %>
 </div>
