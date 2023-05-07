@@ -1,11 +1,33 @@
+<div class="hp_containter">
+  <h1 class="h1mt">The Future Is In Your Dreams.</h1>
+  <h1>We'll Help You See It.</h1>
+
+
+
+  <div class="card-product">
+    <%= image_tag "hp_woman.jpg", class: "img_rebon" %>
+    <div class="card-product-infos">
+      <h2>Cliquez ici</h2>
+      <p>En cas de cauchemars fréquents, consultez un <strong>spécialiste</strong> en santé mentale.</p>
+    </div>
+  </div>
+
+  <%= form_with url: predictions_path, method: 'post', local: true do |f| %>
+    <%= f.label :message, 'Explain your dream:' %>
+    <br>
+    <%= f.text_field :message, placeholder: 'your future is one click away...', class: 'text_field' %>
+    <%= recaptcha_tags %> <!-- Ligne ajoutée depuis la version 'master' -->
+    <%= f.submit 'Get Prediction' %>
+  <% end %>
+  
 <div class="container">
   <div class="container-global home">
     <div class="row" id="description">
       <div class="col-8">
         <section>
-        <h2>Tes rêves sont la clef de ton futur</h2>
-        <p>Notre intelligence artificielle <strong>Onirix,</strong> te permettra d'analyser<br/> et de déchiffrer tes rêves pour que tu puisses prévoir ton futur.</p>
-        <%= image_tag "home.png", class: "home_img" %>
+          <h2>Tes rêves sont la clef de ton futur</h2>
+          <p>Notre intelligence artificielle <strong>Onirix,</strong> te permettra d'analyser<br/> et de déchiffrer tes rêves pour que tu puisses prévoir ton futur.</p>
+          <%= image_tag "home.png", class: "home_img" %>
         </section>
       </div>
       <div class="col-4" id="predictions">
