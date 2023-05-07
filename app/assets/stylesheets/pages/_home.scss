@@ -3,7 +3,9 @@ body {
   // background: linear-gradient($dark-blue, $dark-purple);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+display: flex;
+    flex-direction: column;
   background-color: $black;
   color: $purple;
 

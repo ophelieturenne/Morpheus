@@ -1,25 +1,27 @@
-<h1 class="text-center mt-5 mb-5">Mes Prédictions</h1>
+<div class="container-pred">
+  <h1 class="text-center mt-5 mb-5">Mes Prédictions</h1>
 
-<div class="container-fluid">
-  <div class="row justify-content-center gap-4">
-    <% @predictions.each do |prediction| %>
-      <div class="col-12 col-md-4">
-        <div class="card h-100 prediction-card">
-          <div class="card-header p-4">
-            <h3 class="card-title">Rêve : <%= prediction.dream %></h3>
-          </div>
-          <div class="card-body prediction-card-body p-4">
-            <h5 class="card-title">Prédiction</h5>
-            <p class="card-text text-justify"><%= prediction.prediction %></p>
-          </div>
-          <div class="card-footer px-4 d-flex justify-content-between align-items-center">
-            <small class="text-muted">Prédit le : <%= prediction.created_at.strftime('%d/%m/%Y') %></small>
-            <%= link_to prediction_path(prediction), target: "_blank", class: "predic-show-icon" do %>
-              <i class="fas fa-external-link-alt"></i> <!-- Ajout de l'icône Font Awesome -->
-            <% end %>
+  <div class="container-fluid">
+    <div class="row justify-content-center gap-4">
+      <% @predictions.each do |prediction| %>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 prediction-card">
+            <div class="card-header p-4">
+              <h3 class="card-title">Rêve : <%= prediction.dream %></h3>
+            </div>
+            <div class="card-body prediction-card-body p-4">
+              <h5 class="card-title">Prédiction</h5>
+              <p class="card-text text-justify"><%= prediction.prediction %></p>
+            </div>
+            <div class="card-footer px-4 d-flex justify-content-between align-items-center">
+              <small class="text-muted">Prédit le : <%= prediction.created_at.strftime('%d/%m/%Y') %></small>
+              <%= link_to prediction_path(prediction), target: "_blank", class: "predic-show-icon" do %>
+                <i class="fas fa-external-link-alt"></i> <!-- Ajout de l'icône Font Awesome -->
+              <% end %>
+            </div>
           </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
