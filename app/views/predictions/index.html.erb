@@ -1,19 +1,18 @@
-<h1 style="text-align:center;">Mes Prédictions</h1>
+<h1 style="text-align:center; margin: 50px 0 50px 0">Mes Prédictions</h1>
 
 <div class="container-fluid">
-  <div class="row justify-content-evenly">
+  <div class="row justify-content-center gap-4">
     <% @predictions.each do |prediction| %>
-      <div class="col-12 col-md-5">
-        <div class="card h-100" style="border: 1px solid black; width: 100%;">
-          <div class="card-body" style="flex: none;">
-            <h5 class="card-title">Rêve :</h5>
-            <p class="card-text"><%= prediction.dream %></p>
+      <div class="col-12 col-md-4">
+        <div class="card h-100 prediction-card" style="width: 100%;">
+          <div class="card-body p-4 card-header" style="flex: none;">
+            <h3 class="card-title">Rêve : <%= prediction.dream %></h3>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Prédiction :</h5>
-            <p class="card-text"><%= prediction.prediction %></p>
+          <div class="card-body prediction-card-body p-4">
+            <h5 class="card-title">Prédiction</h5>
+            <p class="card-text" style="text-align: justify;"><%= prediction.prediction %></p>
           </div>
-          <div class="card-footer">
+          <div class="card-footer px-4">
             <small class="text-muted">Prédit le : <%= prediction.created_at.strftime('%d/%m/%Y') %></small>
           </div>
         </div>
