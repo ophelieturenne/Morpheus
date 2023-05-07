@@ -1,20 +1,23 @@
 <h1 style="text-align:center;">Mes Prédictions</h1>
 
-<table style="border-collapse: collapse; width: 90%;margin: 0 auto;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 10px; text-align: left;">Rêve</th>
-      <th style="border: 1px solid #ccc; padding: 10px; text-align: left;">Prédiction</th>
-      <th style="border: 1px solid #ccc; padding: 10px; text-align: left;">Date</th>
-    </tr>
-  </thead>
-  <tbody>
+<div class="container-fluid">
+  <div class="row justify-content-evenly">
     <% @predictions.each do |prediction| %>
-      <tr>
-        <td style="border: 1px solid #ccc; padding: 10px;"><%= prediction.dream %></td>
-        <td style="border: 1px solid #ccc; padding: 10px;"><%= prediction.prediction %></td>
-        <td style="border: 1px solid #ccc; padding: 10px;"><%= prediction.created_at.strftime('%d/%m/%Y') %></td>
-      </tr>
+      <div class="col-12 col-md-5">
+        <div class="card h-100" style="border: 1px solid black; width: 100%;">
+          <div class="card-body" style="flex: none;">
+            <h5 class="card-title">Rêve :</h5>
+            <p class="card-text"><%= prediction.dream %></p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Prédiction :</h5>
+            <p class="card-text"><%= prediction.prediction %></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Prédit le : <%= prediction.created_at.strftime('%d/%m/%Y') %></small>
+          </div>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
