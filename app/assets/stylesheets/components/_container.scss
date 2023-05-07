@@ -17,7 +17,29 @@
   width: 100%;
 }
 
+.container-home {
+  width: 82%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 70px;
+
+  .g-recaptcha {
+    div:first-child {
+      width: 100% !important;
+    }
+  }
+}
+
 #predictions {
+  @media screen and (min-width: 1200px) {
+    width: 27.333333% !important;
+    margin-left: auto;
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 0;
+  }
 
   .forms-label,
   .forms-msg {
@@ -42,6 +64,12 @@
   .forms-prediction {
     margin-bottom: 22px;
     border-radius: 3px;
+
+    &.buttons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
