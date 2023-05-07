@@ -1,0 +1,151 @@
+// Typographie
+$font-family: 'Roboto', sans-serif;
+
+// Container principal
+.login-container {
+  font-family: $body-font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px 0;
+  gap: 30px;
+}
+
+// Formulaire de connexion
+.login-form {
+  background-color: $card-login-color;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  h2 {
+    color: $gray;
+    margin-bottom: 1rem;
+  }
+
+  .form-inputs {
+    margin-bottom: 1rem;
+
+    input[type='text'],
+    input[type='email'],
+    input[type='password'] {
+      background-color: $white;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+
+    label {
+      color: $dark-purple;
+      font-weight: bold;
+    }
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: center;
+
+    .custom-login-button {
+      background-color: $dark-purple;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .custom-login-button:hover {
+      background-color: darken($dark-purple, 10%);
+    }
+  }
+
+  .error-message {
+    color: $error-color;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
+
+// Liens partagés
+.devise-links {
+  margin-top: 0.5rem;
+  background-color: $card-login-color;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: underline;
+  text-decoration-color: $dark-blue;
+
+  a {
+    color: $dark-blue;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: darken($dark-blue, 10%);
+    }
+  }
+}
+
+.other-section {
+
+  // Annuler mon compte
+  .delete-account-container {
+    background-color: $card-login-color;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      color: $gray;
+      margin-bottom: 1rem;
+    }
+
+    .custom-delete-button {
+      background-color: $error-color;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .custom-delete-button:hover {
+      background-color: darken($error-color, 10%);
+    }
+  }
+
+  // Lien Retour
+  .back-link-container {
+    margin-top: 1rem;
+    background-color: $card-login-color;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    .back-link {
+      color: $dark-blue;
+      text-decoration: underline;
+      text-decoration-color: $dark-blue;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: darken($dark-blue, 10%);
+      }
+    }
+  }
+}
