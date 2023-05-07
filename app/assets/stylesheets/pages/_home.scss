@@ -1,14 +1,14 @@
 // Specific CSS for your home-page
 body {
   // background: linear-gradient($dark-blue, $dark-purple);
-  background-repeat:  no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   background-color: $black;
   color: $purple;
 
   .hp_containter {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 
     h1 {
@@ -21,8 +21,8 @@ body {
     }
   }
 
-  form {
-    width: 60%;
+  .prediction-form {
+    width: 100%;
     margin: 10px auto;
     padding: 20px;
     background-color: white;
@@ -37,7 +37,7 @@ body {
       border: 1px solirgb(134, 134, 134)ck;
     }
 
-    .g-recaptcha  {
+    .g-recaptcha {
       margin: 0 0 25px;
     }
   }
