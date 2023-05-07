@@ -17,42 +17,26 @@ body {
     .h1mt {
       margin-top: 20px;
     }
-
   }
-}
 
-// Homepage card - Rebondissement
-.card-product {
-  max-width: 600px;
-  margin: 26px auto 20px;
-  overflow: hidden;
-  height: 70px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-}
+  form {
+    width: 60%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
 
-.card-product img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
-}
+    .text_field {
+      height: 50px;
+      width: 100%;
+      margin: 10px 0 40px;
+      padding-left: 5px;
+      border-radius: 10px;
+      border: 1px solirgb(134, 134, 134)ck;
+    }
 
-.card-product h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-product p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
-
-.card-product .card-product-infos {
-  padding: 16px;
+    .g-recaptcha  {
+      margin: 0 0 25px;
+    }
+  }
 }
